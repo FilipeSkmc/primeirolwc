@@ -1,0 +1,40 @@
+<template>
+	<!-- <c-app> -->
+	<!-- 
+		todo mundo tem que estar aqui dentro do papai 
+
+ 		Passagem de Dados,  para o componente 
+		os valores precisam existir, no JS 
+	-->
+	<lightning-card title={patati.title}>
+		<div class="slds-p-around_medium">
+			<h1>Olá, {nome}</h1>
+			<p>Nome Completo: {nome}</p>
+			<p>Idade: {idade} anos</p>
+			<p>Email: {email}</p>
+			<p>CPF: {cpf}</p>
+		</div>
+
+		<div class="slds-p-around_medium">
+			<h1>Pet, {nomePet}</h1>
+			<p>Marca: {raca}</p>
+			<p>Peso: {peso}</p>
+			<p>Idade do Pet: {idade} anos</p>
+		</div>
+
+		<!-- com dados de objeto patati -->
+		<div class="slds-p-around_medium">
+			<h1>Olá, {patati.nome}</h1>
+			<p>Idade: {patati.idade} anos</p>
+			<p>Email: {patati.email}</p>
+			<p>CPF: {patati.cpf}</p>
+		</div>
+
+		<div class="slds-p-around_medium">
+			<h1>Pet, {patati.nomePet}</h1>
+			<p>Marca: {patati.raca}</p>
+			<p>Peso: {patati.peso}</p>
+			<p>Idade do Pet: {patati.idadePet} anos</p>
+		</div>
+	</lightning-card>
+</template>
